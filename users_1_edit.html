@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>更新个人资料 - Laravel 入门教程</title>
+    <link rel="stylesheet" href="./statics/app.css">
+</head>
+<body>
+<header class="navbar navbar-fixed-top navbar-inverse">
+    <div class="container">
+        <div class="col-md-offset-1 col-md-10">
+            <a href="home.html" id="logo">Sample App</a>
+            <nav>
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li><a href="users.html">用户列表</a></li>
+                    <li class="dropdown">
+                        <a href="users_1_edit.html" class="dropdown-toggle" data-toggle="dropdown">
+                            linkphper <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="users_1.html">个人中心</a></li>
+                            <li><a href="users_1_edit.html">编辑资料</a></li>
+                            <li class="divider"></li>
+                            <li>
+                                <a id="logout" href="users_1_edit.html">
+                                    <form action="http://sample.iokvip.com/logout" method="POST">
+                                        <input type="hidden" name="_token"
+                                               value="TrfalbSdSsMyVBXbibDQANfr5kr6EMdq8qkMlOtk">
+                                        <input type="hidden" name="_method" value="DELETE">
+                                        <button class="btn btn-block btn-danger" type="submit" name="button">退出</button>
+                                    </form>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="col-md-offset-1 col-md-10">
+        <div class="col-md-offset-2 col-md-8">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h5>更新个人资料</h5>
+                </div>
+                <div class="panel-body">
+
+
+                    <div class="gravatar_edit">
+                        <a href="http://gravatar.com/emails" target="_blank">
+                            <img src="./statics/logo.png" alt="linkphper"
+                                 class="gravatar">
+                        </a>
+                    </div>
+
+                    <form method="POST" action="users.2.html">
+                        <input type="hidden" name="_method" value="PATCH">
+                        <input type="hidden" name="_token" value="TrfalbSdSsMyVBXbibDQANfr5kr6EMdq8qkMlOtk">
+
+                        <div class="form-group">
+                            <label for="name">名称：</label>
+                            <input type="text" name="name" class="form-control" value="linkphper">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">邮箱：</label>
+                            <input type="text" name="email" class="form-control" value="linkphper@gmail.com"
+                                   disabled="">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">密码：</label>
+                            <input type="password" name="password" class="form-control" value="">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password_confirmation">确认密码：</label>
+                            <input type="password" name="password_confirmation" class="form-control" value="">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">更新</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <footer class="footer">
+                <small class="slogon">
+                    <img class="brand-icon" src="./statics/logo.png">
+                    <a href="https://yousails.com/">
+                        优帆远扬 | 创造不息，交付不止
+                    </a>
+                </small>
+                <nav>
+                    <ul>
+                        <li><a href="about.html">关于</a></li>
+                    </ul>
+                </nav>
+            </footer>
+        </div>
+    </div>
+</div>
+
+<script src="./statics/app.js"></script>
+
+
+</body>
+</html>

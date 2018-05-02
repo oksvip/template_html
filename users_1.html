@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>sdfdsa - Laravel 入门教程</title>
+    <link rel="stylesheet" href="./statics/app.css">
+</head>
+<body>
+<header class="navbar navbar-fixed-top navbar-inverse">
+    <div class="container">
+        <div class="col-md-offset-1 col-md-10">
+            <a href="home.html" id="logo">Sample App</a>
+            <nav>
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li><a href="users.html">用户列表</a></li>
+                    <li class="dropdown">
+                        <a href="users_1.html" class="dropdown-toggle" data-toggle="dropdown">
+                            linkphper <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="users_1.html">个人中心</a></li>
+                            <li><a href="users_1_edit.html">编辑资料</a></li>
+                            <li class="divider"></li>
+                            <li>
+                                <a id="logout" href="http://sample.iokvip.com/users/2#">
+                                    <form action="http://sample.iokvip.com/logout" method="POST">
+                                        <input type="hidden" name="_token"
+                                               value="TrfalbSdSsMyVBXbibDQANfr5kr6EMdq8qkMlOtk">
+                                        <input type="hidden" name="_method" value="DELETE">
+                                        <button class="btn btn-block btn-danger" type="submit" name="button">退出</button>
+                                    </form>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="col-md-offset-1 col-md-10">
+        <div class="row">
+            <div class="col-md-offset-2 col-md-8">
+                <div class="col-md-12">
+                    <div class="col-md-offset-2 col-md-8">
+                        <section class="user_info">
+                            <a href="users_1.html">
+                                <img src="./statics/logo.png" alt="test" class="gravatar">
+                            </a>
+
+                            <h1>test</h1>
+                        </section>
+                        <section class="stats">
+                            <div class="stats">
+                                <a href="users_1_folllowings.html">
+                                    <strong id="following" class="stat">
+                                        0
+                                    </strong>
+                                    关注
+                                </a>
+                                <a href="users_1_folllowings.html">
+                                    <strong id="followers" class="stat">
+                                        0
+                                    </strong>
+                                    粉丝
+                                </a>
+                                <a href="users_1.html">
+                                    <strong id="statuses" class="stat">
+                                        0
+                                    </strong>
+                                    微博
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div id="follow_form">
+                        <form action="http://sample.iokvip.com/users/followers/2" method="post">
+                            <input type="hidden" name="_token" value="TrfalbSdSsMyVBXbibDQANfr5kr6EMdq8qkMlOtk">
+                            <button type="submit" class="btn btn-sm btn-primary">关注</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <footer class="footer">
+                <small class="slogon">
+                    <img class="brand-icon" src="./statics/logo.png">
+                    <a href="https://yousails.com/">
+                        优帆远扬 | 创造不息，交付不止
+                    </a>
+                </small>
+                <nav>
+                    <ul>
+                        <li><a href="about.html">关于</a></li>
+                    </ul>
+                </nav>
+            </footer>
+        </div>
+    </div>
+</div>
+
+<script src="./statics/app.js"></script>
+
+
+</body>
+</html>
